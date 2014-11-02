@@ -1,0 +1,134 @@
+body {
+  margin-top: 20px;
+  font-family: 'Shadows Into Light Two', cursive;
+  font-size: 20pt;
+  background-image: url('../img/hat-light.png');
+}
+ul
+{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+li
+{
+  background-image: url('../img/cane.png');
+  background-repeat: no-repeat;
+  background-position: 0 .2em;
+  padding-left: 2.6em;
+}
+form {
+  text-align: center;
+}
+.bank {
+  width: 300px;
+  float: left;
+  margin: 30px;
+}
+.bass-pad {
+  background: #0C0F66;
+}
+.beet-pad {
+  background: #C71CAC;
+}
+.pad {
+  color: #fff;
+  width: 80px;
+  height: 80px;
+  float: left;
+  margin: 8px;
+  padding: 2px;
+}
+.beet-pad-on {
+  background: #58c09b;
+}
+.bass-pad-on {
+  background: #58c09b;
+}
+.bank-timer {
+  padding: 20px;
+  width: 40px;
+  font-size: 24pt;
+  text-align: center;
+  border: 3px dotted #888;
+  position: relative;
+  top: -730px;
+  left: 597px;
+  z-index: -10;
+  display: none;
+}
+#bumpd {
+  padding: 20px;
+  font-size: 24pt;
+  text-align: center;
+  border: 3px dotted #888;
+  position: absolute;
+  top: 50px;
+  left: 40%;
+  z-index: -20;
+  background-color: #ff0;
+  display: none;
+  width: 115px;
+}
+#content {
+  width: 62.5%;
+  margin: 0 auto;
+  padding-top: 160px;
+  margin-top: 25px;
+}
+#logo {
+  margin: 0 auto;
+  background: url('../img/logo.png') no-repeat;
+  width: 1021px;
+  height: 235px;
+}
+#hat {
+  background: url('../img/hat.png') no-repeat;
+  width: 193px;
+  height: 244px;
+  position: relative;
+  top: 130px;
+  left: -80px;
+  z-index: -10;
+}
+#player-container {
+  margin: 0 auto;
+  width: 725px;
+  margin-top: -80px;
+}
+#canvas {
+  position: absolute;
+  z-index: -20;
+  bottom: 0px;
+  left: 0px;
+}
+#flow {
+  font-family: 'Shadows Into Light Two', cursive;
+  font-size: 20pt;
+  padding: 10px;
+  width: 400px;	
+}
+#rhyme {
+  font-family: 'Shadows Into Light Two', cursive;
+  font-size: 20pt;
+  padding: 10px;
+  width: 400px;	
+}
+#rhymewrapper {
+  text-align: center;
+  border: 3px dotted #888;
+  padding: 20px;
+  margin: 40px;
+}
+#buttons {
+  display: inline-block;
+  vertical-align: top;	
+}
+#buttons button {
+  font-family: 'Shadows Into Light Two', cursive;
+  font-size: 20pt;
+}
+#rhymebutton {
+  font-family: 'Shadows Into Light Two', cursive;
+  font-size: 20pt;
+}

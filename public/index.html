@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Stay Sucka Free!</title>
+    <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light+Two' rel='stylesheet' type='text/css'>
+    <link href='css/suckafree.css' rel='stylesheet' type='text/css'>
+    <style>
+      body {
+        background: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="player-container">
+      <div id="hat"></div>
+      <div id="player">
+        <canvas id="canvas" width="1000" height="325" style="display: block;"></canvas>
+        <div id="bass" class="bank">
+          <div class="pad-row">
+            <div id="bass1" class="pad bass-pad bass-play">1</div>
+            <div id="bass2" class="pad bass-pad bass-play">2</div>
+            <div id="bass3" class="pad bass-pad bass-play">3</div>
+            <div style="clear:both"></div>
+          </div>
+          <div class="pad-row">
+            <div id="bass4" class="pad bass-pad bass-play">4</div>
+            <div id="bass5" class="pad bass-pad bass-play">5</div>
+            <div id="bass6" class="pad bass-pad bass-play">6</div>
+            <div style="clear:both"></div>
+          </div>
+          <div class="pad-row">
+            <div id="bass7" class="pad bass-pad bass-play">7</div>
+            <div id="bass8" class="pad bass-pad bass-play">8</div>
+            <div id="bass9" class="pad bass-pad bass-play">9</div>
+            <div style="clear:both"></div>
+          </div>
+        </div>
+        <div id="beets" class="bank">
+          <div class="pad-row">
+            <div id="beet1" class="pad beet-pad beet-play">a</div>
+            <div id="beet2" class="pad beet-pad beet-play">b</div>
+            <div id="beet3" class="pad beet-pad beet-play">c</div>
+            <div style="clear:both"></div>
+          </div>
+          <div class="pad-row">
+            <div id="beet4" class="pad beet-pad beet-play">d</div>
+            <div id="beet5" class="pad beet-pad beet-play">e</div>
+            <div id="beet6" class="pad beet-pad beet-play">g</div>
+            <div style="clear:both"></div>
+          </div>
+          <div class="pad-row">
+            <div id="beet7" class="pad beet-pad beet-play">h</div>
+            <div id="beet8" class="pad beet-pad beet-play">i</div>
+            <div id="beet9" class="pad beet-pad beet-play">j</div>
+            <div style="clear:both"></div>
+          </div>
+        </div>
+        <div style="clear:both"></div>
+        <form action="#" onsubmit="">
+          <textarea id="flow">It's like this and like that and like this..</textarea>
+          <span id="buttons">
+            <!--button id="checkit">check</button--><button id="saveit">bump!</button>
+          </span>
+        </form>
+        <div id="bumpd">BUMP'D!</div>
+        <div id="rhymewrapper">
+          <form action="javascript:RhymeBrainSubmit()" id="rhymeform">
+            <input type="text" id="rhyme">
+            <button form="rhymeform" id="rhymebutton">rhyme!</button>
+          </form>
+          <script type="text/javascript">
+             var RhymeBrainMaxResults = 5;
+          </script>
+          <script type="text/javascript" src="js/rhymebrain.js"></script>
+        </div>
+        <div id="beet-timer" class="bank-timer"></div>
+      </div> <!-- end player -->
+    </div> <!-- end containter -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/suckafree.js"></script>
+    <script>
+      $('#saveit').click(function () {
+        $.ajax({
+            type: "POST",
+            url: "/bump/",
+            data: { name: $('#flow').val() }
+          }).done(function(data) {
+            $('#flow').val('');
+            $('#bumpd').fadeIn();
+        });
+        return false;
+      });
+      $('#flow').click(function () {
+        $('#bumpd').fadeOut();
+      });
+      </script
+      <!--script src="js/colorfree.js"></script-->
+    </body>
+  </html>

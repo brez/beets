@@ -1,0 +1,28 @@
+{
+  "name": "suckafree",
+  "version": "0.0.1",
+  "description": "The Sucka Free Flow Process",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "hyphenation.en-us": "~0.2.1",
+    "hypher": "~0.2.0",
+    "express": "3.x",
+    "pivotal": "0.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/thebarbariangroup/suckafree.git"
+  },
+  "author": "brez!",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thebarbariangroup/suckafree/issues"
+  }
+}
